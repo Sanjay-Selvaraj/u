@@ -49,3 +49,52 @@ h6 {
     font-weight: 800;
     color: #757575;
 }
+
+/* -------------- Product Grid Style --------------- */
+.product-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-grid .product-item {
+    width: 25%;
+    padding: 15px;
+}
+
+@media (max-width: 992px) {
+    .product-grid .product-item {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid .product-item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-grid .product-item {
+        width: 100%;
+    }
+}
+
+.product-grid .product-single {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-grid .product-img,
+.product-grid .product-content {
+    position: relative;
+    width: 100%;
+    background: #000000;
+    overflow: hidden;
+}
+
+.product-grid .product-img img {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
